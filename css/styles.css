@@ -50,20 +50,24 @@ ul.topnav li a:hover {
   ul.topnav li {float: none;}
 }
 
+.flex-container-top {
+  align-items: stretch;
+  flex-direction: row;
+  height: 540px;
+
+}
+
 .left {
   display: flex;
   line-height: 50px;
-  width: 300px;
+  width: 460px;
   flex-direction: column;
   justify-content: left;
   align-items: left;
   height: 100%;
   margin-left: 55px;
   line-height: 25px;
-}
 
-.left>form {
-  font-size: 15px;
 }
 
 input[type=submit] {
@@ -71,8 +75,18 @@ input[type=submit] {
   border: none;
   color: white;
   padding: 10px;
-  margin: 10px 0px;
+  margin: 10px 80px;
   cursor: pointer;
+  float: right;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 5px 20px;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .right {
@@ -83,13 +97,17 @@ input[type=submit] {
 }
 
 .left-p {
-  width: 140%;
+  width: 90%;
+  text-align: center;
 }
 
 .left-form {
-  width: 140%;
+  width: 100%;
+  text-align: middle;
+  flex-grow: 3;
 }
 
-.col-7 {
-  width: 140%;
+#form {
+  width: 100%;
 }
+  
