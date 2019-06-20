@@ -1,0 +1,95 @@
+.flex-container-body {
+  background-image: url("img/beans.jpg");
+  background-color: rgb(15, 10, 0);
+}
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+.flex-container>ul {
+  color: white;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  flex-direction: row;
+}
+
+#header-img {
+  height: 77px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(15, 10, 0), rgba(109,72,3));
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: rgb(66, 44, 2);
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.left {
+  display: flex;
+  line-height: 50px;
+  width: 300px;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+  margin-left: 55px;
+  line-height: 25px;
+}
+
+.left>form {
+  font-size: 15px;
+}
+
+input[type=submit] {
+  background-color: rgb(66, 37, 3);
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  align-items: stretch;
+  float: right;
+  margin-right: 50px;
+}
+
+.left-p {
+  width: 140%;
+}
+
+.left-form {
+  width: 140%;
+}
+
+.col-7 {
+  width: 140%;
+}
